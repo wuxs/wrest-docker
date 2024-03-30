@@ -5,7 +5,7 @@ WORKDIR /home/app/.wine/drive_c
 ADD https://github.com/tom-snow/wechat-windows-versions/releases/download/v3.9.2.23/WeChatSetup-3.9.2.23.exe WeChatSetup.exe
 #COPY WeChatSetup-3.9.8.25.exe WeChatSetup.exe
 #ADD https://raw.githubusercontent.com/jwping/wxbot/main/bin/wxbot-sidecar.exe wxbot-sidecar.exe
-ADD https://github.com/opentdp/wrest-chat/releases/download/latest/wrest-chat.zip wrest-chat.zip
+ADD https://github.com/opentdp/wrest-chat/releases/download/v0.22.2/wrest-chat.zip wrest-chat.zip
 #COPY wxbot-sidecar.exe wxbot-sidecar.exe
 
 COPY cmd.sh /cmd.sh
