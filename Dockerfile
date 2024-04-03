@@ -16,9 +16,7 @@ RUN bash -c 'nohup /entrypoint.sh 2>&1 &' && \
     ls -alh && \
     sudo chown app:app WeChatSetup.exe  wrest-chat.zip && \
     unzip wrest-chat.zip && \
-    ./install-wechat.sh && \
-    rm -rf WeChatSetup.exe && \
-    rm -rf install-wechat.sh
+    ./install-wechat.sh 
 
 # 可选，优化内存占用，暂未发现对稳定性有影响
 #RUN cd /home/app/.wine/drive_c/users/app/AppData/Roaming/Tencent/WeChat/XPlugin/Plugins/ && \
