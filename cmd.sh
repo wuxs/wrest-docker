@@ -3,8 +3,7 @@
 exec sudo -E bash -c 'supervisord -c /etc/supervisord.conf -l /var/log/supervisord.log' &
 sleep 10
 
-
-wine 'C:\wrest-chat\wrest.exe'
+wine 'C:\wrest-chat\wrest.exe' &
 wait
 # wine 'C:\Program Files\Tencent\WeChat\WeChat.exe' &
 # sleep 10
